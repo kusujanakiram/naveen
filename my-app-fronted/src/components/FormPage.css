@@ -1,0 +1,142 @@
+.form-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+}
+
+/* Light Theme Variables */
+.form-page.light {
+  --bg: #f9f9f9;
+  --text: #222;
+  --input-bg: #fff;
+  --border: #ccc;
+  --btn-bg: #007bff;
+  --btn-text: #fff;
+}
+
+/* Dark Theme Variables */
+.form-page.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --input-bg: #1f1f1f;
+  --border: #444;
+  --btn-bg: #1e90ff;
+  --btn-text: #fff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.theme-toggle button {
+  padding: 6px 12px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--input-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 2%;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Layout of Inputs */
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Base Inputs & Textarea */
+.form-row input,
+.form-row select,
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+  flex: 1;
+  padding: 10px;
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* Textarea specifics */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+
+/* File Input + Checkbox Row */
+.file-row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  accent-color: var(--btn-bg);
+  width: 18px;
+  height: 18px;
+}
+
+/* Select Dropdown Arrow */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='gray' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 30px;
+}
+
+/* Label Next to Checkbox */
+.file-row label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}

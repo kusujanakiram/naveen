@@ -1,0 +1,22 @@
+.display-page {
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100vw;
+  height: 100vh;
+}
+
+.display-page.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.display-page.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
